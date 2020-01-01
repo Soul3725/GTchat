@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D8FCF5194894FF106F5CFC0 /* Pods_GTchatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 207C38B25B4AAED5EF93AD64 /* Pods_GTchatTests.framework */; };
+		3BA27CF83582895120DEBB4F /* Pods_GTchat_GTchatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41078124DD9650884BCF9D9C /* Pods_GTchat_GTchatUITests.framework */; };
+		7C1E4BC8B65E49AACF8F37BB /* Pods_GTchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC07F06D515ECC64B30D331A /* Pods_GTchat.framework */; };
 		9C3D086C23760E2E0038A785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D086B23760E2E0038A785 /* AppDelegate.swift */; };
-		9C3D086E23760E2E0038A785 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D086D23760E2E0038A785 /* SceneDelegate.swift */; };
-		9C3D087023760E2E0038A785 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D086F23760E2E0038A785 /* ViewController.swift */; };
+		9C3D087023760E2E0038A785 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D086F23760E2E0038A785 /* LogInViewController.swift */; };
 		9C3D087323760E2E0038A785 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3D087123760E2E0038A785 /* Main.storyboard */; };
 		9C3D087523760E300038A785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3D087423760E300038A785 /* Assets.xcassets */; };
 		9C3D087823760E300038A785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3D087623760E300038A785 /* LaunchScreen.storyboard */; };
 		9C3D088323760E310038A785 /* GTchatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D088223760E310038A785 /* GTchatTests.swift */; };
 		9C3D088E23760E310038A785 /* GTchatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D088D23760E310038A785 /* GTchatUITests.swift */; };
+		9C3D089C23760FAA0038A785 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C3D089B23760FAA0038A785 /* GoogleService-Info.plist */; };
+		9C3D089D23760FAA0038A785 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C3D089B23760FAA0038A785 /* GoogleService-Info.plist */; };
+		9C3D089E23760FAA0038A785 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C3D089B23760FAA0038A785 /* GoogleService-Info.plist */; };
+		9C3D08A72378AC210038A785 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D08A62378AC210038A785 /* HomeViewController.swift */; };
+		9C3D08A92378ACBF0038A785 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D08A82378ACBF0038A785 /* ChatListViewController.swift */; };
+		9C3D08AB2399BE250038A785 /* EntryTourListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D08AA2399BE250038A785 /* EntryTourListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		207C38B25B4AAED5EF93AD64 /* Pods_GTchatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTchatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34453FA34790D28E1599EE94 /* Pods-GTchat-GTchatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTchat-GTchatUITests.debug.xcconfig"; path = "Target Support Files/Pods-GTchat-GTchatUITests/Pods-GTchat-GTchatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		39E17DB2F1FBF930B9090EF2 /* Pods-GTchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTchat.debug.xcconfig"; path = "Target Support Files/Pods-GTchat/Pods-GTchat.debug.xcconfig"; sourceTree = "<group>"; };
+		41078124DD9650884BCF9D9C /* Pods_GTchat_GTchatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTchat_GTchatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A01796E658DF55888076EB5 /* Pods-GTchat-GTchatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTchat-GTchatUITests.release.xcconfig"; path = "Target Support Files/Pods-GTchat-GTchatUITests/Pods-GTchat-GTchatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9C3D086823760E2E0038A785 /* GTchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3D086B23760E2E0038A785 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C3D086D23760E2E0038A785 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C3D086F23760E2E0038A785 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C3D086F23760E2E0038A785 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		9C3D087223760E2E0038A785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C3D087423760E300038A785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C3D087723760E300038A785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +61,14 @@
 		9C3D088923760E310038A785 /* GTchatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTchatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3D088D23760E310038A785 /* GTchatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTchatUITests.swift; sourceTree = "<group>"; };
 		9C3D088F23760E310038A785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C3D089B23760FAA0038A785 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9C3D08A62378AC210038A785 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9C3D08A82378ACBF0038A785 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		9C3D08AA2399BE250038A785 /* EntryTourListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTourListViewController.swift; sourceTree = "<group>"; };
+		B0D8C469D9966AC91D3FB5D9 /* Pods-GTchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTchat.release.xcconfig"; path = "Target Support Files/Pods-GTchat/Pods-GTchat.release.xcconfig"; sourceTree = "<group>"; };
+		BAC0198515CBA9BABCB8F02E /* Pods-GTchatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTchatTests.debug.xcconfig"; path = "Target Support Files/Pods-GTchatTests/Pods-GTchatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC07F06D515ECC64B30D331A /* Pods_GTchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC307B921DC0391D0FFBC031 /* Pods-GTchatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTchatTests.release.xcconfig"; path = "Target Support Files/Pods-GTchatTests/Pods-GTchatTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C1E4BC8B65E49AACF8F37BB /* Pods_GTchat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D8FCF5194894FF106F5CFC0 /* Pods_GTchatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +92,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA27CF83582895120DEBB4F /* Pods_GTchat_GTchatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EE83D60FF13190FD2667071 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC07F06D515ECC64B30D331A /* Pods_GTchat.framework */,
+				41078124DD9650884BCF9D9C /* Pods_GTchat_GTchatUITests.framework */,
+				207C38B25B4AAED5EF93AD64 /* Pods_GTchatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9C3D085F23760E2E0038A785 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +116,8 @@
 				9C3D088123760E310038A785 /* GTchatTests */,
 				9C3D088C23760E310038A785 /* GTchatUITests */,
 				9C3D086923760E2E0038A785 /* Products */,
+				F7E5901DD3EBCE687D31B5EE /* Pods */,
+				6EE83D60FF13190FD2667071 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,12 +135,15 @@
 			isa = PBXGroup;
 			children = (
 				9C3D086B23760E2E0038A785 /* AppDelegate.swift */,
-				9C3D086D23760E2E0038A785 /* SceneDelegate.swift */,
-				9C3D086F23760E2E0038A785 /* ViewController.swift */,
+				9C3D086F23760E2E0038A785 /* LogInViewController.swift */,
+				9C3D08A62378AC210038A785 /* HomeViewController.swift */,
+				9C3D08A82378ACBF0038A785 /* ChatListViewController.swift */,
+				9C3D08AA2399BE250038A785 /* EntryTourListViewController.swift */,
 				9C3D087123760E2E0038A785 /* Main.storyboard */,
 				9C3D087423760E300038A785 /* Assets.xcassets */,
 				9C3D087623760E300038A785 /* LaunchScreen.storyboard */,
 				9C3D087923760E300038A785 /* Info.plist */,
+				9C3D089B23760FAA0038A785 /* GoogleService-Info.plist */,
 			);
 			path = GTchat;
 			sourceTree = "<group>";
@@ -128,6 +166,19 @@
 			path = GTchatUITests;
 			sourceTree = "<group>";
 		};
+		F7E5901DD3EBCE687D31B5EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39E17DB2F1FBF930B9090EF2 /* Pods-GTchat.debug.xcconfig */,
+				B0D8C469D9966AC91D3FB5D9 /* Pods-GTchat.release.xcconfig */,
+				34453FA34790D28E1599EE94 /* Pods-GTchat-GTchatUITests.debug.xcconfig */,
+				5A01796E658DF55888076EB5 /* Pods-GTchat-GTchatUITests.release.xcconfig */,
+				BAC0198515CBA9BABCB8F02E /* Pods-GTchatTests.debug.xcconfig */,
+				CC307B921DC0391D0FFBC031 /* Pods-GTchatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C3D089223760E310038A785 /* Build configuration list for PBXNativeTarget "GTchat" */;
 			buildPhases = (
+				D962C38A0574D3BD217CAF8C /* [CP] Check Pods Manifest.lock */,
 				9C3D086423760E2E0038A785 /* Sources */,
 				9C3D086523760E2E0038A785 /* Frameworks */,
 				9C3D086623760E2E0038A785 /* Resources */,
+				16CB5AD6812CB170AD142E3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C3D089523760E310038A785 /* Build configuration list for PBXNativeTarget "GTchatTests" */;
 			buildPhases = (
+				ACDC7979D0A2190E5D580D1F /* [CP] Check Pods Manifest.lock */,
 				9C3D087A23760E310038A785 /* Sources */,
 				9C3D087B23760E310038A785 /* Frameworks */,
 				9C3D087C23760E310038A785 /* Resources */,
@@ -170,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C3D089823760E310038A785 /* Build configuration list for PBXNativeTarget "GTchatUITests" */;
 			buildPhases = (
+				1D8A6AC5B8838FBFCB668835 /* [CP] Check Pods Manifest.lock */,
 				9C3D088523760E310038A785 /* Sources */,
 				9C3D088623760E310038A785 /* Frameworks */,
 				9C3D088723760E310038A785 /* Resources */,
+				54E202BE7C791631AD99296F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C3D087823760E300038A785 /* LaunchScreen.storyboard in Resources */,
+				9C3D089C23760FAA0038A785 /* GoogleService-Info.plist in Resources */,
 				9C3D087523760E300038A785 /* Assets.xcassets in Resources */,
 				9C3D087323760E2E0038A785 /* Main.storyboard in Resources */,
 			);
@@ -242,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3D089D23760FAA0038A785 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,19 +307,125 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3D089E23760FAA0038A785 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16CB5AD6812CB170AD142E3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTchat/Pods-GTchat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTchat/Pods-GTchat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GTchat/Pods-GTchat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D8A6AC5B8838FBFCB668835 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GTchat-GTchatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54E202BE7C791631AD99296F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTchat-GTchatUITests/Pods-GTchat-GTchatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GTchat-GTchatUITests/Pods-GTchat-GTchatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GTchat-GTchatUITests/Pods-GTchat-GTchatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACDC7979D0A2190E5D580D1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GTchatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D962C38A0574D3BD217CAF8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GTchat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C3D086423760E2E0038A785 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C3D087023760E2E0038A785 /* ViewController.swift in Sources */,
+				9C3D087023760E2E0038A785 /* LogInViewController.swift in Sources */,
 				9C3D086C23760E2E0038A785 /* AppDelegate.swift in Sources */,
-				9C3D086E23760E2E0038A785 /* SceneDelegate.swift in Sources */,
+				9C3D08A92378ACBF0038A785 /* ChatListViewController.swift in Sources */,
+				9C3D08A72378AC210038A785 /* HomeViewController.swift in Sources */,
+				9C3D08AB2399BE250038A785 /* EntryTourListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +596,14 @@
 		};
 		9C3D089323760E310038A785 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39E17DB2F1FBF930B9090EF2 /* Pods-GTchat.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B32FR6Z5D5;
 				INFOPLIST_FILE = GTchat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +617,14 @@
 		};
 		9C3D089423760E310038A785 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0D8C469D9966AC91D3FB5D9 /* Pods-GTchat.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B32FR6Z5D5;
 				INFOPLIST_FILE = GTchat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +638,7 @@
 		};
 		9C3D089623760E310038A785 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC0198515CBA9BABCB8F02E /* Pods-GTchatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +661,7 @@
 		};
 		9C3D089723760E310038A785 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC307B921DC0391D0FFBC031 /* Pods-GTchatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,8 +684,9 @@
 		};
 		9C3D089923760E310038A785 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34453FA34790D28E1599EE94 /* Pods-GTchat-GTchatUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B32FR6Z5D5;
 				INFOPLIST_FILE = GTchatUITests/Info.plist;
@@ -532,8 +705,9 @@
 		};
 		9C3D089A23760E310038A785 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A01796E658DF55888076EB5 /* Pods-GTchat-GTchatUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B32FR6Z5D5;
 				INFOPLIST_FILE = GTchatUITests/Info.plist;
