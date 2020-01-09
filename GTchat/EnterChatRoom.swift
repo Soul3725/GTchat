@@ -1,11 +1,10 @@
 import UIKit
 import Firebase
-import OAuthSwift
 
-class EntryTourListViewController: UITableViewController {
+class EnterChatRoom: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+    @IBOutlet weak var button: UIButton!
 }

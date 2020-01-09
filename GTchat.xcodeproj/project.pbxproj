@@ -10,6 +10,9 @@
 		1D8FCF5194894FF106F5CFC0 /* Pods_GTchatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 207C38B25B4AAED5EF93AD64 /* Pods_GTchatTests.framework */; };
 		3BA27CF83582895120DEBB4F /* Pods_GTchat_GTchatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41078124DD9650884BCF9D9C /* Pods_GTchat_GTchatUITests.framework */; };
 		7C1E4BC8B65E49AACF8F37BB /* Pods_GTchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC07F06D515ECC64B30D331A /* Pods_GTchat.framework */; };
+		9C22B34223C1502A001CF310 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C22B34123C1502A001CF310 /* ChatRoomViewController.swift */; };
+		9C22B34423C54DFB001CF310 /* EnterChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C22B34323C54DFB001CF310 /* EnterChatRoom.swift */; };
+		9C22B34623C5585F001CF310 /* MockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C22B34523C5585F001CF310 /* MockMessage.swift */; };
 		9C3D086C23760E2E0038A785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D086B23760E2E0038A785 /* AppDelegate.swift */; };
 		9C3D087023760E2E0038A785 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D086F23760E2E0038A785 /* LogInViewController.swift */; };
 		9C3D087323760E2E0038A785 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C3D087123760E2E0038A785 /* Main.storyboard */; };
@@ -22,7 +25,6 @@
 		9C3D089E23760FAA0038A785 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C3D089B23760FAA0038A785 /* GoogleService-Info.plist */; };
 		9C3D08A72378AC210038A785 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D08A62378AC210038A785 /* HomeViewController.swift */; };
 		9C3D08A92378ACBF0038A785 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D08A82378ACBF0038A785 /* ChatListViewController.swift */; };
-		9C3D08AB2399BE250038A785 /* EntryTourListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D08AA2399BE250038A785 /* EntryTourListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		39E17DB2F1FBF930B9090EF2 /* Pods-GTchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTchat.debug.xcconfig"; path = "Target Support Files/Pods-GTchat/Pods-GTchat.debug.xcconfig"; sourceTree = "<group>"; };
 		41078124DD9650884BCF9D9C /* Pods_GTchat_GTchatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTchat_GTchatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A01796E658DF55888076EB5 /* Pods-GTchat-GTchatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTchat-GTchatUITests.release.xcconfig"; path = "Target Support Files/Pods-GTchat-GTchatUITests/Pods-GTchat-GTchatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C22B34123C1502A001CF310 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		9C22B34323C54DFB001CF310 /* EnterChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterChatRoom.swift; sourceTree = "<group>"; };
+		9C22B34523C5585F001CF310 /* MockMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMessage.swift; sourceTree = "<group>"; };
 		9C3D086823760E2E0038A785 /* GTchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3D086B23760E2E0038A785 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C3D086F23760E2E0038A785 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +69,6 @@
 		9C3D089B23760FAA0038A785 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9C3D08A62378AC210038A785 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9C3D08A82378ACBF0038A785 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
-		9C3D08AA2399BE250038A785 /* EntryTourListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTourListViewController.swift; sourceTree = "<group>"; };
 		B0D8C469D9966AC91D3FB5D9 /* Pods-GTchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTchat.release.xcconfig"; path = "Target Support Files/Pods-GTchat/Pods-GTchat.release.xcconfig"; sourceTree = "<group>"; };
 		BAC0198515CBA9BABCB8F02E /* Pods-GTchatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTchatTests.debug.xcconfig"; path = "Target Support Files/Pods-GTchatTests/Pods-GTchatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC07F06D515ECC64B30D331A /* Pods_GTchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,7 +142,9 @@
 				9C3D086F23760E2E0038A785 /* LogInViewController.swift */,
 				9C3D08A62378AC210038A785 /* HomeViewController.swift */,
 				9C3D08A82378ACBF0038A785 /* ChatListViewController.swift */,
-				9C3D08AA2399BE250038A785 /* EntryTourListViewController.swift */,
+				9C22B34123C1502A001CF310 /* ChatRoomViewController.swift */,
+				9C22B34523C5585F001CF310 /* MockMessage.swift */,
+				9C22B34323C54DFB001CF310 /* EnterChatRoom.swift */,
 				9C3D087123760E2E0038A785 /* Main.storyboard */,
 				9C3D087423760E300038A785 /* Assets.xcassets */,
 				9C3D087623760E300038A785 /* LaunchScreen.storyboard */,
@@ -421,11 +427,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C22B34623C5585F001CF310 /* MockMessage.swift in Sources */,
 				9C3D087023760E2E0038A785 /* LogInViewController.swift in Sources */,
 				9C3D086C23760E2E0038A785 /* AppDelegate.swift in Sources */,
 				9C3D08A92378ACBF0038A785 /* ChatListViewController.swift in Sources */,
 				9C3D08A72378AC210038A785 /* HomeViewController.swift in Sources */,
-				9C3D08AB2399BE250038A785 /* EntryTourListViewController.swift in Sources */,
+				9C22B34223C1502A001CF310 /* ChatRoomViewController.swift in Sources */,
+				9C22B34423C54DFB001CF310 /* EnterChatRoom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
