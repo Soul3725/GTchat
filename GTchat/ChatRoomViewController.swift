@@ -18,30 +18,31 @@ class ChatRoomViewController: MessagesViewController {
         messagesCollectionView.messagesDataSource = self
         messagesCollectionView.messagesLayoutDelegate = self
         messagesCollectionView.messagesDisplayDelegate = self
-        
         messageInputBar.delegate = self
         
         db = Firestore.firestore()
+        
         getMessage()
     }
     
     func getMessage() {
         db.collection("sample").addSnapshotListener { snapShot, error in
             guard let snapShot = snapShot else {
-                print("snapShot is nil")
                 return
             }
             snapShot.documentChanges.forEach{diff in
             //更新内容が追加だったときの処理
                     if diff.type == .added {
-                        let chatData = diff.document.data()
-                        let userInfo = MockUser(senderId: chatData["senderID"] as! String, displayName: chatData["sender"] as! String)
-                        let mes = MockMessage(text: chatData["message"] as! String, user: userInfo, messageId: UUID().uuidString, date: Date())
-                        self.messages.append(mes)
-                        self.messagesCollectionView.reloadData()
-                        self.messagesCollectionView.scrollToBottom()
+                            let chatData = diff.document.data()
+                            let userInfo = MockUser(senderId: chatData["senderID"] as! String, displayName: chatData["sender"] as! String)
+                            let mes = MockMessage(text: chatData["message"] as! String, user: userInfo, messageId: UUID().uuidString, date: Date())
+                            self.messages.append(mes)
+                            DispatchQueue.main.async {
+                                self.messagesCollectionView.reloadData()
+                                self.messagesCollectionView.scrollToBottom()
+                            }
                     }
-                }
+            }
             
         }
     }
@@ -50,6 +51,20 @@ class ChatRoomViewController: MessagesViewController {
 
 
 extension ChatRoomViewController: MessagesDataSource {
+    
+    func cellTopLabelAttributedText(for message: MessageType, at indexPath: IndexPath) -> NSAttributedString? {
+        if indexPath.section % 3 == 0 {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "YYYY年MM月dd日"
+            let dateString = formatter.string(from: message.sentDate)
+            return NSAttributedString(
+                string: dateString,
+                attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 10),
+                             NSAttributedString.Key.foregroundColor: UIColor.darkGray]
+            )
+        }
+        return nil
+    }
    
     //送信者(本人)の定義
     func currentSender() -> SenderType {
@@ -122,8 +137,26 @@ extension ChatRoomViewController: MessagesDisplayDelegate {
     }
     
     func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
-        let avatar = Avatar(image: nil, initials: message.sender.displayName)
-        avatarView.set(avatar: avatar)
+        db.collection("users").document(message.sender.senderId).getDocument { (document, error) in
+            if let document = document, document.exists {
+                let imgURL = document.data()!["img"]
+                let url = URL(string: imgURL as! String)
+                DispatchQueue.global().async {
+                    do {
+                        let imgData = try Data(contentsOf: url!)
+                        DispatchQueue.main.async {
+                            let img = UIImage(data: imgData)
+                            let avatar = Avatar(image: img)
+                            avatarView.set(avatar: avatar)
+                        }
+                    }catch let err {
+                        print("Error : \(err.localizedDescription)")
+                    }
+                }
+            } else {
+                print("Document does not exist")
+            }
+        }
     }
 }
 
@@ -135,7 +168,7 @@ extension ChatRoomViewController: MessageInputBarDelegate {
             "message" : text
         ]
         db.collection("sample").document().setData(
-            messageData
+            messageData as [String : Any]
             ) { err in
             if let err = err {
                 print("Error writing document: \(err)")
@@ -143,5 +176,6 @@ extension ChatRoomViewController: MessageInputBarDelegate {
                 print("Document successfully written!")
             }
         }
+        inputBar.inputTextView.text = ""
     }
 }

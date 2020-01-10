@@ -52,32 +52,36 @@
             </objects>
             <point key="canvasLocation" x="31.884057971014496" y="119.86607142857142"/>
         </scene>
-        <!--Item-->
+        <!--チャット-->
         <scene sceneID="u9k-k3-4kQ">
             <objects>
-                <viewController id="92c-yd-aJB" customClass="EnterChatRoom" customModule="GTchat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="チャット" id="92c-yd-aJB" customClass="EnterChatRoom" customModule="GTchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jg7-jv-07o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK8-hg-TEY">
-                                <rect key="frame" x="230" y="402" width="80" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IK8-hg-TEY">
+                                <rect key="frame" x="79" y="421" width="256" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Enter ChatRoom!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="CUX-Xb-WcL" kind="show" id="4s4-Oq-WfY"/>
+                                    <segue destination="CUX-Xb-WcL" kind="show" id="Xg4-xr-jSw"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.090196078430000007" green="0.098039215690000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IK8-hg-TEY" firstAttribute="centerX" secondItem="jg7-jv-07o" secondAttribute="centerX" id="0Ii-0X-HJX"/>
+                            <constraint firstItem="IK8-hg-TEY" firstAttribute="centerY" secondItem="jg7-jv-07o" secondAttribute="centerY" id="hA4-5D-Wea"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vap-Ga-oT8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="kBd-iY-BBe"/>
+                    <tabBarItem key="tabBarItem" title="チャット" image="message" catalog="system" largeContentSizeImage="message" selectedImage="message" id="kBd-iY-BBe"/>
                     <navigationItem key="navigationItem" id="iFA-Wt-1RG"/>
                     <connections>
-                        <outlet property="button" destination="IK8-hg-TEY" id="8ZQ-aX-HDb"/>
+                        <outlet property="button" destination="IK8-hg-TEY" id="0Bp-Uy-9a5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2N3-Hb-OHE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -87,7 +91,7 @@
         <!--ホーム-->
         <scene sceneID="JN0-xf-cFY">
             <objects>
-                <viewController id="adr-s3-nih" customClass="HomeViewController" customModule="GTchat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ホーム" id="adr-s3-nih" customClass="HomeViewController" customModule="GTchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QZ7-XU-VJR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,7 +125,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cdq-bS-tMt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ホーム" image="house.fill" catalog="system" largeContentSizeImage="house.fill" selectedImage="house.fill" id="i7n-Ey-azw"/>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="house" catalog="system" largeContentSizeImage="house" selectedImage="house" id="i7n-Ey-azw"/>
                     <connections>
                         <outlet property="greeting" destination="sga-Jo-kf0" id="dkZ-rj-rHS"/>
                         <outlet property="userImage" destination="MeP-aF-QGR" id="GDi-hg-QUi"/>
@@ -153,11 +157,11 @@
             </objects>
             <point key="canvasLocation" x="841" y="142"/>
         </scene>
-        <!--ホーム-->
+        <!--Tab Bar Controller-->
         <scene sceneID="hIm-eB-eWt">
             <objects>
                 <tabBarController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="POJ-BU-bjI" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="ホーム" id="6q0-En-BNf"/>
+                    <navigationItem key="navigationItem" id="6q0-En-BNf"/>
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4ga-NY-m05">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -169,7 +173,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="adr-s3-nih" kind="relationship" relationship="viewControllers" id="JN0-9X-1Rw"/>
-                        <segue destination="92c-yd-aJB" kind="relationship" relationship="viewControllers" id="fb9-Jg-XwC"/>
+                        <segue destination="92c-yd-aJB" kind="relationship" relationship="viewControllers" id="GHQ-8X-Ou9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="42z-zB-rwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -196,7 +200,8 @@
     </scenes>
     <resources>
         <image name="Twitter_Social_Icon_Circle_White" width="200" height="200"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="message" catalog="system" width="64" height="56"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

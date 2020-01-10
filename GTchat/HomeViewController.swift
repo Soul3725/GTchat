@@ -4,9 +4,11 @@ import Firebase
 class HomeViewController: UIViewController {
     
     let user = Auth.auth().currentUser
+    var db: Firestore!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        db = Firestore.firestore()
         changeImageSize()
         greeting.text = "ようこそ、" + (user?.displayName)! + "さん"
     }
@@ -23,6 +25,16 @@ class HomeViewController: UIViewController {
                 photoURL.replaceSubrange(range, with: "")
                 //URLから画像を非同期で表示
                 let url = URL(string: photoURL)
+                let uID = user.uid
+                db.collection("users").document(uID).updateData([
+                    "img": photoURL
+                    ]) { err in
+                        if let err = err {
+                            print("Error writing document: \(err)")
+                        } else {
+                            print("Document successfully written!")
+                        }
+                    }
                 DispatchQueue.global().async {
                     do {
                         let imgData = try Data(contentsOf: url!)
