@@ -1,8 +1,4 @@
-import UIKit
-import Foundation
-import CoreLocation
 import MessageKit
-import AVFoundation
 
 struct MockUser: SenderType, Equatable {
     var senderId: String

@@ -9,15 +9,12 @@ class ChatRoomViewController: MessagesViewController {
     
     var db: Firestore!
     var messages: [MockMessage] = []
-    let user1 = MockUser(senderId: "鈴木", displayName: "鈴木")
-    let user2 = MockUser(senderId: user.uid, displayName: user.displayName!)
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        messagesCollectionView.messagesDataSource = self
-        messagesCollectionView.messagesLayoutDelegate = self
-        messagesCollectionView.messagesDisplayDelegate = self
+        messagesCollectionView.messagesDataSource = self //送信者の定義など
+        messagesCollectionView.messagesLayoutDelegate = self //吹き出しのサイズの調整など
+        messagesCollectionView.messagesDisplayDelegate = self //文字色などの色周りなど
         messageInputBar.delegate = self
         
         db = Firestore.firestore()
@@ -53,7 +50,7 @@ class ChatRoomViewController: MessagesViewController {
 extension ChatRoomViewController: MessagesDataSource {
     
     func cellTopLabelAttributedText(for message: MessageType, at indexPath: IndexPath) -> NSAttributedString? {
-        if indexPath.section % 3 == 0 {
+        if indexPath.section % 5 == 0 {
             let formatter = DateFormatter()
             formatter.dateFormat = "YYYY年MM月dd日"
             let dateString = formatter.string(from: message.sentDate)

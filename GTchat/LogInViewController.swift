@@ -1,8 +1,5 @@
 import UIKit
 import Firebase
-import FirebaseAuth
-import FirebaseFirestore
-
 
 class LogInViewController: UIViewController {
     
@@ -33,16 +30,17 @@ class LogInViewController: UIViewController {
         provider!.getCredentialWith(nil) { credential, error in
           if error != nil {
             //Handleエラー
-            print("error")
+            self.errorAlert()
             return
           }
             if credential != nil {
                 Auth.auth().signIn(with: credential!) { (result, error) in
                 if error != nil {
                 //ログインエラー
-                print("error")
+                    self.errorAlert()
                 return
                 }
+                    
                 //アクセストークン・シークレットトークンをunwrap
                 let credential = result?.credential as? OAuthCredential
                 let accessToken = credential?.accessToken
@@ -74,5 +72,20 @@ class LogInViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func errorAlert(){
+        //アラートに表示する文字列の設定
+        let alert: UIAlertController = UIAlertController(title: "ERROR", message: "ログインに失敗しました。", preferredStyle:  UIAlertController.Style.alert)
+        //OKボタンの実装
+        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
+            // ボタンが押された時の処理を書く（クロージャ実装）
+            (action: UIAlertAction!) -> Void in
+            print("OK")
+        })
+        //OKボタンをアラートに追加
+        alert.addAction(defaultAction)
+        //アラートを表示
+        present(alert, animated: true, completion: nil)
     }
 }

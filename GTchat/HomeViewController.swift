@@ -20,7 +20,6 @@ class HomeViewController: UIViewController {
         if let user = user {
             //photoURLを書き換えてオリジナルサイズのURLに変更
             var photoURL = user.photoURL!.absoluteString
-            print(photoURL)
             if let range = photoURL.range(of: "_normal") {
                 photoURL.replaceSubrange(range, with: "")
                 //URLから画像を非同期で表示
